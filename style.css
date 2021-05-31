@@ -25,6 +25,8 @@
 	--weight-bold: 700;
 	--weight-semi-bold: 600;
 	--weight-reqular: 400;
+	--weight-light: 300;
+	--weight-thin: 100;
 
 	/* Size */
 	--size-border-radius: 4px;
@@ -33,7 +35,7 @@
 /* Universial tags */
 * {
 	box-sizing: border-box;
-	font-family: 'Source Code Pro', monospace;
+	font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -136,11 +138,20 @@ p {
 	width: 250px;
 	height: 250px;
 	border-radius: 50%;
-	border: 2px solid var(--color-light-white)
+	border: 2px solid var(--color-light-white);
 }
 
-.home__title, .home__description {
+.home__title,
+.home__description {
 	color: var(--color-white);
+}
+
+.home__title {
+	font-weight: var(--weight-thin);
+}
+
+.home__description {
+	font-weight: var(--weight-light);
 }
 
 .home__contact {
@@ -152,4 +163,3 @@ p {
 	border: 2px solid var(--color-white);
 	border-radius: var(--size-border-radius);
 }
-
