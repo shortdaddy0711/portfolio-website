@@ -11,7 +11,7 @@
 	--color-grey: #616161;
 	--color-blue: #73aace;
 	--color-yellow: #fff7d1;
-	--color-orange: #feb546;
+	--color-orange: #614110;
 	--color-black: #000000;
 
 	/* Font size */
@@ -33,6 +33,7 @@
 /* Universial tags */
 * {
 	box-sizing: border-box;
+	font-family: 'Source Code Pro', monospace;
 }
 
 body {
@@ -41,12 +42,22 @@ body {
 
 a {
 	text-decoration: none;
-	color: var(--color-white);
+	color: var(--color-blue);
 }
 
 ul {
-	list-style: none;
 	padding-left: 0;
+}
+
+li {
+	list-style: none;
+}
+
+button {
+	background-color: transparent;
+	cursor: pointer;
+	border: none;
+	outline: none;
 }
 
 /* Typography */
@@ -82,9 +93,9 @@ p {
 #navbar {
 	display: flex;
 	justify-content: space-between;
-	background-color: var(--color-grey);
+	background-color: var(--color-white);
 	align-items: center;
-	color: var(--color-white);
+	color: var(--color-blue);
 	padding: 16px;
 }
 
@@ -107,3 +118,38 @@ p {
 .navbar__menu__item.active {
 	border: 1px solid var(--color-white);
 }
+
+.navbar__menu__item:hover {
+	background-color: var(--color-blue);
+	border-radius: var(--size-border-radius);
+	color: var(--color-white);
+}
+
+/* Home */
+#home {
+	background: url('images/background.png') center/cover no-repeat;
+	padding: 40px;
+	text-align: center;
+}
+
+.home__avatar {
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	border: 2px solid var(--color-light-white)
+}
+
+.home__title, .home__description {
+	color: var(--color-white);
+}
+
+.home__contact {
+	color: var(--color-white);
+	font-size: var(--font-reqular);
+	font-weight: var(--weight-bold);
+	margin: 24px;
+	padding: 8px 12px;
+	border: 2px solid var(--color-white);
+	border-radius: var(--size-border-radius);
+}
+
