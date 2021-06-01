@@ -20,6 +20,7 @@
 	--color-light-blue-grey: #c7d3d4;
 	--color-purple: #603f83;
 	--color-button-grey: #c7d3d4;
+	--color-navbar-green: #ACC7B4;
 
 	/* Font size */
 	--font-large: 48px;
@@ -55,7 +56,7 @@ body {
 
 a {
 	text-decoration: none;
-	color: var(--color-blue);
+	color: var(--color-purple);
 }
 
 ul {
@@ -116,12 +117,20 @@ section {
 
 /* Navbar */
 #navbar {
+	position: fixed;
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
-	background-color: var(--color-white);
 	align-items: center;
-	color: var(--color-blue);
+	color: var(--color-purple);
 	padding: 16px;
+	background-color: transparent;
+	transition: all var(--animation-duration) ease-in-out;
+}
+
+#navbar.navbar--dark {
+	background-color: var(--color-navbar-green);
+	padding: 6px 16px;
 }
 
 .navbar__menu {
@@ -137,22 +146,30 @@ section {
 	padding: 8px 12px;
 	margin: 0 4px;
 	cursor: pointer;
-	border-radius: var(--size-border-radius);
 }
 
-.navbar__menu__item.active {
-	border: 1px solid var(--color-white);
-}
-
+.navbar__menu__item.active,
 .navbar__menu__item:hover {
-	background-color: var(--color-blue);
+	background-color: var(--color-purple);
 	border-radius: var(--size-border-radius);
 	color: var(--color-white);
+}
+
+.navbar__toggle-btn {
+	position: absolute;
+	top: 20px;
+	right: 32px;
+	font-size: 24px;
+	color: var(--color-purple);
+	display: none;
 }
 
 /* Home */
 #home {
 	background: url('images/background.png') center/cover no-repeat;
+	text-align: center;
+	padding: 40px;
+	padding-top: 120px;
 }
 
 .home__avatar {
@@ -457,5 +474,40 @@ section {
 
 .contact__links i:hover {
 	transform: scale(1.1);
-	color: var(--color-purple);
+	color: var(--color-blue);
+}
+
+/* For responsive web page */
+@media screen and (max-width: 768px) {
+	.navbar__toggle-btn {
+		display: block;
+	}
+
+	#navbar {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.navbar__menu {
+		flex-direction: column;
+		text-align: center;
+		width: 100%;
+		display: none;
+	}
+
+	.about__majors {
+		flex-direction: column;
+	}
+
+	.major {
+		margin-bottom: 38px;
+	}
+
+	.skills {
+		flex-direction: column;
+	}
+
+	.project {
+		flex-grow: 1;
+	}
 }
