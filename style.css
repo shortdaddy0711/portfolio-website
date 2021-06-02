@@ -126,11 +126,12 @@ section {
 	padding: 16px;
 	background-color: transparent;
 	transition: all var(--animation-duration) ease-in-out;
+	z-index: 1;
 }
 
 #navbar.navbar--dark {
 	background-color: var(--color-navbar-green);
-	padding: 6px 16px;
+	padding: 0px 16px;
 }
 
 .navbar__menu {
