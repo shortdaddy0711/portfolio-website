@@ -20,7 +20,7 @@
 	--color-light-blue-grey: #c7d3d4;
 	--color-purple: #603f83;
 	--color-button-grey: #c7d3d4;
-	--color-navbar-green: #ACC7B4;
+	--color-navbar-green: #acc7b4;
 
 	/* Font size */
 	--font-large: 48px;
@@ -125,13 +125,14 @@ section {
 	color: var(--color-purple);
 	padding: 16px;
 	background-color: transparent;
-	transition: all var(--animation-duration) ease-in-out;
+	transition: all 300ms ease-in-out;
 	z-index: 1;
 }
 
 #navbar.navbar--dark {
 	background-color: var(--color-navbar-green);
 	padding: 0px 16px;
+	opacity: 0.9;
 }
 
 .navbar__menu {
@@ -302,7 +303,7 @@ section {
 
 /* Skill */
 #skills {
-	background-color: var(--color-yellow);
+	background-color: var(--color-button-grey);
 }
 
 .skills {
@@ -324,7 +325,7 @@ section {
 
 .skills__left {
 	flex-basis: 90%;
-	background-color: var(--color-turquoise);
+	background-color: var(--color-purple);
 	padding: 20px 40px;
 }
 
@@ -346,7 +347,7 @@ section {
 
 .skill__progress {
 	height: 4px;
-	background-color: var(--color-coral-pink);
+	background-color: var(--color-dark-pink);
 	border-radius: 2px;
 }
 
@@ -404,6 +405,13 @@ section {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	opacity: 1;
+	transition: all var(--animation-duration) ease-in ;
+}
+
+.work__projects.fade-out {
+	opacity: 0.6;
+	transform: scale(0.96) translateY(40px);
 }
 
 .project {
@@ -415,6 +423,10 @@ section {
 	height: 250px;
 	margin: 2px;
 	background-color: var(--color-light-white);
+}
+
+.project.invisible {
+	display: none;
 }
 
 .project__img {
@@ -438,7 +450,7 @@ section {
 }
 
 .project:hover .project__description {
-	opacity: 1;
+	opacity: 0.9;
 	transform: translateY(0px);
 }
 
@@ -446,7 +458,11 @@ section {
 	color: var(--color-purple);
 }
 .project__description span {
-	color: var(--color-white);
+	color: var(--color-turquoise);
+	max-width: 90%;
+	margin: auto;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 /* Contact */
@@ -476,6 +492,17 @@ section {
 .contact__links i:hover {
 	transform: scale(1.1);
 	color: var(--color-blue);
+}
+
+/* Scroll */
+.arrow__btn {
+	color: var(--color-purple);
+	font-size: 50px;
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+	opacity: 1;
+	display: none;
 }
 
 /* For responsive web page */

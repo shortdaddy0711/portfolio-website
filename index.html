@@ -35,7 +35,9 @@
 					Home
 				</li>
 				<li class="navbar__menu__item" data-link="#about">About</li>
-				<li class="navbar__menu__item" data-link="#education">Education</li>
+				<li class="navbar__menu__item" data-link="#education">
+					Education
+				</li>
 				<li class="navbar__menu__item" data-link="#skills">Skills</li>
 				<li class="navbar__menu__item" data-link="#work">My work</li>
 				<li class="navbar__menu__item" data-link="#contact">Contact</li>
@@ -48,17 +50,21 @@
 		</nav>
 		<!-- Home -->
 		<section id="home">
-			<img
-				src="images/profile.png"
-				alt="Namsoo's profile photo"
-				class="home__avatar"
-			/>
-			<h1 class="home__title">Hello, I'm Namsoo Lee.</h1>
-			<h2 class="home__description">
-				I'm a SF-based Junior software engineer, funseeker with an
-				inquisitive mind.
-			</h2>
-			<button class="home__contact">Contact Me</button>
+			<div class="home__container">
+				<img
+					src="images/profile.png"
+					alt="Namsoo's profile photo"
+					class="home__avatar"
+				/>
+				<h1 class="home__title">Hello, I'm Namsoo Lee.</h1>
+				<h2 class="home__description">
+					I'm a SF-based Junior Software Engineer, funseeker with an
+					inquisitive mind.
+				</h2>
+				<button class="home__contact" data-link="#contact">
+					Contact Me
+				</button>
+			</div>
 		</section>
 		<!-- About -->
 		<section id="about">
@@ -233,19 +239,19 @@
 				<h1>My work</h1>
 				<h3>Projects</h3>
 				<div class="work__categories">
-					<button class="category__btn active">
+					<button class="category__btn active" data-filter="*">
 						<span class="category__text">All</span>
-						<span class="category__count">1</span>
+						<span class="category__count">6</span>
 					</button>
-					<button class="category__btn">
+					<button class="category__btn" data-filter="front-end">
 						<span class="category__text">Front-end</span
-						><span class="category__count">1</span>
+						><span class="category__count">3</span>
 					</button>
-					<button class="category__btn">
+					<button class="category__btn" data-filter="back-end">
 						<span class="category__text">Back-end</span
-						><span class="category__count">1</span>
+						><span class="category__count">2</span>
 					</button>
-					<button class="category__btn">
+					<button class="category__btn" data-filter="blockchain">
 						<span class="category__text">Blockchain</span
 						><span class="category__count">1</span>
 					</button>
@@ -255,6 +261,7 @@
 						href="https://confident-wiles-9758fc.netlify.app"
 						class="project"
 						target="blank"
+						data-type="front-end"
 					>
 						<img
 							class="project__img"
@@ -274,6 +281,7 @@
 						href="https://boring-cray-c23c26.netlify.app"
 						class="project"
 						target="blank"
+						data-type="front-end"
 					>
 						<img
 							class="project__img"
@@ -290,6 +298,7 @@
 						href="https://www.youtube.com/watch?v=mziOusdEerI"
 						class="project"
 						target="blank"
+						data-type="blockchain"
 					>
 						<img
 							class="project__img"
@@ -306,6 +315,7 @@
 						href="https://github.com/OptimizationPrime/Affordability-Calc"
 						class="project"
 						target="blank"
+						data-type="back-end"
 					>
 						<img
 							class="project__img"
@@ -325,6 +335,7 @@
 						href="https://www.youtube.com/watch?v=bwFG_wmzwp4"
 						class="project"
 						target="blank"
+						data-type="front-end"
 					>
 						<img
 							class="project__img"
@@ -343,6 +354,7 @@
 						href="https://github.com/shortdaddy0711/goRestApi"
 						class="project"
 						target="blank"
+						data-type="back-end"
 					>
 						<img
 							class="project__img"
@@ -395,5 +407,9 @@
 			</div>
 			<p class="contact__rights">Designed & Built by shortdaddy</p>
 		</section>
+		<!-- Arrow up -->
+		<button class="arrow__btn">
+			<i class="fas fa-arrow-circle-up" data-link="#home"></i>
+		</button>
 	</body>
 </html>
