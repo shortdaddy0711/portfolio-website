@@ -150,7 +150,12 @@ section {
 	cursor: pointer;
 }
 
-.navbar__menu__item.active,
+.navbar__menu__item.active {
+	border: 1px solid var(--color-purple);
+	border-radius: var(--size-border-radius);
+	color: var(--color-purple);
+}
+
 .navbar__menu__item:hover {
 	background-color: var(--color-purple);
 	border-radius: var(--size-border-radius);
@@ -159,8 +164,8 @@ section {
 
 .navbar__toggle-btn {
 	position: absolute;
-	top: 20px;
-	right: 32px;
+	top: 17px;
+	right: 17px;
 	font-size: 24px;
 	color: var(--color-purple);
 	display: none;
@@ -365,16 +370,16 @@ section {
 
 .category__btn.active,
 .category__btn:hover {
-	background-color: var(--color-purple);
-	color: var(--color-button-grey);
+	background-color: var(--color-dark-grey);
+	color: var(--color-orange);
 }
 
 .category__btn.active .category__count,
 .category__btn:hover .category__count {
 	opacity: 1;
 	top: 0;
-	background-color: var(--color-button-grey);
-	color: var(--color-purple);
+	background-color: var(--color-orange);
+	color: var(--color-dark-grey);
 }
 
 .category__count {
@@ -393,12 +398,12 @@ section {
 }
 
 .category__text {
-	color: var(--color-purple);
+	color: var(--color-dark-grey);
 }
 
 .category__btn.active .category__text,
 .category__btn:hover .category__text {
-	color: var(--color-button-grey);
+	color: var(--color-orange);
 }
 
 .work__projects {
@@ -436,7 +441,7 @@ section {
 
 .project__description {
 	position: absolute;
-	background-color: var(--color-light-blue-grey);
+	background-color: var(--color-dark-grey);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -455,10 +460,10 @@ section {
 }
 
 .project__description h2 {
-	color: var(--color-purple);
+	color: var(--color-orange);
 }
 .project__description span {
-	color: var(--color-turquoise);
+	color: var(--color-light-blue-grey);
 	max-width: 90%;
 	margin: auto;
 	margin-top: 0;
@@ -499,8 +504,8 @@ section {
 	color: var(--color-purple);
 	font-size: 50px;
 	position: fixed;
-	right: 30px;
-	bottom: 30px;
+	right: 17px;
+	bottom: 17px;
 	opacity: 1;
 	display: none;
 }
@@ -514,13 +519,22 @@ section {
 	#navbar {
 		flex-direction: column;
 		align-items: flex-start;
+		background-color: var(--color-navbar-green);
 	}
+
+	#navbar.navbar--dark {
+	padding: 17px 16px;
+}
 
 	.navbar__menu {
 		flex-direction: column;
 		text-align: center;
 		width: 100%;
 		display: none;
+	}
+
+	.navbar__menu.open {
+		display: block;
 	}
 
 	.about__majors {

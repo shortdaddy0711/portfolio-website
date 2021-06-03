@@ -15,13 +15,31 @@ document.addEventListener('scroll', () => {
 	}
 });
 
+// Handle togle button click to show and hide navbar menu
+const toggleButton = document.querySelector('.navbar__toggle-btn');
+const menu = document.querySelector('.navbar__menu');
+
+toggleButton.addEventListener('click', () => {
+	menu.classList.toggle('open');
+});
+
 // Handle click event to scroll to target section
-navbar.addEventListener('click', (e) => {
+document.addEventListener('click', (e) => {
 	const link = e.target.dataset.link;
 	if (link !== undefined) {
 		const scrollTo = document.querySelector(link);
 		scrollTo.scrollIntoView({ behavior: 'smooth' });
+		menu.classList.remove('open');
 	}
+
+	const buttons = navbar.querySelectorAll('.navbar__menu__item');
+	buttons.forEach((button) => {
+		if (link === button.dataset.link) {
+			button.classList.add('active');
+		} else {
+			button.classList.remove('active');
+		}
+	});
 });
 
 // Handle scroll event to make home fade to transparent
@@ -47,19 +65,21 @@ document.addEventListener('scroll', () => {
 const workButtonContainer = document.querySelector('.work__categories');
 
 workButtonContainer.addEventListener('click', (e) => {
-	// Handle click to add 'active' to class for button styling
-	const buttons = workButtonContainer.querySelectorAll('.category__btn');
-	const target =
+	const filter =
 		e.target.dataset.filter || e.target.parentNode.dataset.filter;
-	buttons.forEach((button) => {
-		if (button.dataset.filter === target) {
-			button.classList.add('active');
-		} else {
-			button.classList.remove('active');
-		}
-	});
+	if (filter == null) {
+		return;
+	}
 
-	// Handle click to show result of filter
+	// Handle click to add 'active' to class for button styling
+	const current = workButtonContainer.querySelector('.category__btn.active');
+	current.classList.remove('active');
+
+	const target =
+		e.target.nodeName === 'BUTTON' ? e.target : e.target.parentNode;
+	target.classList.add('active');
+
+	// Handle class list to show and hide the result of filter
 	const workContainer = document.querySelector('.work__projects');
 	const projects = document.querySelectorAll('.project');
 
@@ -67,7 +87,7 @@ workButtonContainer.addEventListener('click', (e) => {
 
 	setTimeout(() => {
 		projects.forEach((project) => {
-			if (project.dataset.type === target || target === '*') {
+			if (project.dataset.type === filter || filter === '*') {
 				project.classList.remove('invisible');
 			} else {
 				project.classList.add('invisible');
