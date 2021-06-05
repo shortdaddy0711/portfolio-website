@@ -72,6 +72,7 @@ button {
 	cursor: pointer;
 	border: none;
 	outline: none;
+	padding: 0;
 }
 
 /* Typography */
@@ -166,7 +167,7 @@ section {
 	position: absolute;
 	top: 17px;
 	right: 17px;
-	font-size: 24px;
+	font-size: var(--font-medium);
 	color: var(--color-purple);
 	display: none;
 }
@@ -411,7 +412,7 @@ section {
 	flex-wrap: wrap;
 	justify-content: center;
 	opacity: 1;
-	transition: all var(--animation-duration) ease-in ;
+	transition: all var(--animation-duration) ease-in;
 }
 
 .work__projects.fade-out {
@@ -512,6 +513,15 @@ section {
 
 /* For responsive web page */
 @media screen and (max-width: 768px) {
+	:root {
+		/* Font size */
+		--font-large: 30px;
+		--font-medium: 18px;
+		--font-reqular: 16px;
+		--font-small: 14px;
+		--font-micro: 12px;
+	}
+
 	.navbar__toggle-btn {
 		display: block;
 	}
@@ -523,8 +533,8 @@ section {
 	}
 
 	#navbar.navbar--dark {
-	padding: 17px 16px;
-}
+		padding: 17px 16px;
+	}
 
 	.navbar__menu {
 		flex-direction: column;
@@ -537,19 +547,45 @@ section {
 		display: block;
 	}
 
+	section {
+		padding: 16px;
+		padding-top: 43px;
+	}
+
+	.edu {
+		margin-top: 20px;
+	}
+
 	.about__majors {
 		flex-direction: column;
+		margin-top: 30px;
+		margin-bottom: 0px;
 	}
 
 	.major {
-		margin-bottom: 38px;
+		margin-bottom: 30px;
 	}
 
 	.skills {
 		flex-direction: column;
 	}
 
+	.category__btn {
+		padding: 4px 0;
+		width: 100%;
+		margin: 3px;
+	}
+
 	.project {
 		flex-grow: 1;
+	}
+
+	.arrow__btn {
+		font-size: 40px;
+	}
+
+	.home__avatar {
+		width: 200px;
+		height: 200px;
 	}
 }
