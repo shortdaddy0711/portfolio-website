@@ -129,13 +129,13 @@ const oberverCallback = (entries, observer) => {
 			}
 		} else if (entry.intersectionRatio > max) {
 			max = entry.intersectionRatio;
-			console.log(entry.intersectionRatio);
 			activateButton(current.dataset.link);
 		}
 	});
 };
 
 const observer = new IntersectionObserver(oberverCallback, oberverOptions);
+
 sectionsArr.forEach((section) => observer.observe(section));
 
 window.addEventListener('wheel', () => {

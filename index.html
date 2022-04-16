@@ -28,13 +28,12 @@
 		<nav id="navbar">
 			<div class="navbar_logo">
 				<i class="fas fa-frog"></i>
-				<a href="#">Namsoo</a>
+				<a href="#">Portfolio</a>
 			</div>
 			<ul class="navbar__menu">
-				<li class="navbar__menu__item" data-link="#home">
-					Home
-				</li>
+				<li class="navbar__menu__item" data-link="#home">Home</li>
 				<li class="navbar__menu__item" data-link="#about">About</li>
+				<li class="navbar__menu__item" data-link="#job">Job Experience</li>
 				<li class="navbar__menu__item" data-link="#education">
 					Education
 				</li>
@@ -111,6 +110,37 @@
 				</div>
 			</div>
 		</section>
+		<!-- Job Experience -->
+		<section id="job">
+			<div class="section__container">
+				<h1>Job Experience</h1>
+				<div class="job">
+					<img
+						src="images/jobs/ul_logo.png"
+						alt=""
+						class="job__logo"
+					/>
+					<div class="job__description">
+						<p class="job__title">UL LLC</p>
+						<p class="job__name">
+							Full-stack Software Engineer
+						</p>
+						<p class="job__period">Oct 2021 - Present / Fremont, CA</p>
+						<ul class="job__comment">
+							<li>
+								Build internal desktop applications that automate the testing process for UL global labs
+							</li>
+							<li>
+								Developed an internal web application that provides in-depth information about opening new labs for executives
+							</li>
+							<li>
+								Maintain several internal web applications that manage testing engineers and devices under test
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
 		<!-- Education -->
 		<section id="education">
 			<div class="section__container">
@@ -127,16 +157,19 @@
 						<p class="edu__name">
 							Advanced Software Engineering Immersive
 						</p>
-						<p class="edu__period">Oct 2020 - Jan 2021</p>
-						<br />
-						<p class="edu__comment">
-							Completed over 900 hours of coding experience
-							(equivalent to roughly 1-1.5 years on the job),
-							built full-stack engineering projects designed to
-							simulate a real-world, production-level environment,
-							used a variety of tools/frameworks namely React,
-							Node.js, Express, PostgreSQL, MongoDB
-						</p>
+						<p class="edu__period">Oct 2020 - Jan 2021 / San Francisco, CA</p>
+						<ul class="edu__comment">
+							<li>
+								Completed over 900 hours of coding experience
+								(equivalent to roughly 1-1.5 years on the job)
+							</li>
+							<li>
+								built full-stack engineering projects designed to
+								simulate a real-world, production-level environment,
+								used a variety of tools/frameworks namely React,
+								Node.js, Express, PostgreSQL, MongoDB
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -158,6 +191,31 @@
 						<div class="skill">
 							<div class="skill__description">
 								<span>HTML</span>
+								<span>90%</span>
+							</div>
+							<div class="skill__bar">
+								<div
+									class="skill__progress"
+									style="width: 90%"
+								></div>
+							</div>
+						</div>
+
+						<div class="skill">
+							<div class="skill__description">
+								<span>CSS</span>
+								<span>70%</span>
+							</div>
+							<div class="skill__bar">
+								<div
+									class="skill__progress"
+									style="width: 70%"
+								></div>
+							</div>
+						</div>
+						<div class="skill">
+							<div class="skill__description">
+								<span>JavaScript</span>
 								<span>80%</span>
 							</div>
 							<div class="skill__bar">
@@ -167,40 +225,15 @@
 								></div>
 							</div>
 						</div>
-
-						<div class="skill">
-							<div class="skill__description">
-								<span>CSS</span>
-								<span>60%</span>
-							</div>
-							<div class="skill__bar">
-								<div
-									class="skill__progress"
-									style="width: 60%"
-								></div>
-							</div>
-						</div>
-						<div class="skill">
-							<div class="skill__description">
-								<span>JavaScript</span>
-								<span>55%</span>
-							</div>
-							<div class="skill__bar">
-								<div
-									class="skill__progress"
-									style="width: 55%"
-								></div>
-							</div>
-						</div>
 						<div class="skill">
 							<div class="skill__description">
 								<span>React</span>
-								<span>60%</span>
+								<span>80%</span>
 							</div>
 							<div class="skill__bar">
 								<div
 									class="skill__progress"
-									style="width: 60%"
+									style="width: 80%"
 								></div>
 							</div>
 						</div>
@@ -219,12 +252,12 @@
 						<div class="skill">
 							<div class="skill__description">
 								<span>Go</span>
-								<span>40%</span>
+								<span>50%</span>
 							</div>
 							<div class="skill__bar">
 								<div
 									class="skill__progress"
-									style="width: 40%"
+									style="width: 50%"
 								></div>
 							</div>
 						</div>
@@ -393,7 +426,9 @@
 		<!-- Contact -->
 		<section id="contact">
 			<h1 class="contact__title">Let's talk</h1>
-			<a href="mailto:namsoo.max.lee@gmail.com"><h2 class="contatct__email">namsoo.max.lee@gmail.com</h2></a>
+			<a href="mailto:namsoo.max.lee@gmail.com"
+				><h2 class="contatct__email">namsoo.max.lee@gmail.com</h2></a
+			>
 			<div class="contact__links">
 				<a href="https://github.com/shortdaddy0711" target="_blank"
 					><i class="fab fa-github"></i
