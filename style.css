@@ -21,6 +21,7 @@
   --color-purple: #603f83;
   --color-button-grey: #c7d3d4;
   --color-navbar-green: #acc7b4;
+  --color-fainted-purple: #847793;
 
   /* Font size */
   --font-large: 48px;
@@ -391,7 +392,7 @@ section {
 
 .skills__left {
   flex-basis: 90%;
-  background-color: var(--color-purple);
+  background-color: var(--color-fainted-purple);
   padding: 20px 40px;
 }
 
@@ -406,14 +407,14 @@ section {
 
 .skill__bar {
   width: 100%;
-  height: 4px;
+  height: 5px;
   background-color: var(--color-light-white);
   border-radius: 2px;
 }
 
 .skill__progress {
-  height: 4px;
-  background-color: var(--color-dark-pink);
+  height: 5px;
+  background-color: var(--color-orange);
   border-radius: 2px;
 }
 
