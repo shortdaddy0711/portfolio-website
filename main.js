@@ -108,13 +108,6 @@ const oberverOptions = {
 };
 
 let next;
-
-// const moveActive = (node) => {
-// 	current.classList.remove('active');
-// 	current = node;
-// 	current.classList.add('active');
-// };
-
 let max = 0;
 
 const oberverCallback = (entries, observer) => {
