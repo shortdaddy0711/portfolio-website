@@ -1,440 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Namsoo's Portfolio</title>
-		<meta
-			name="description"
-			content="Portfolio for a back-end software engineer Namsoo"
-		/>
-		<meta name="author" content="Namsoo" />
-		<link rel="icon" type="image/png" href="images/favicon.png" />
-		<script
-			src="https://kit.fontawesome.com/8936e0966f.js"
-			crossorigin="anonymous"
-		></script>
-		<link rel="preconnect" href="https://fonts.gstatic.com" />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Source+Code+Pro&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="style.css" />
-		<script src="main.js" defer></script>
-	</head>
-	<body>
-		<!-- Navbar -->
-		<nav id="navbar">
-			<div class="navbar_logo">
-				<i class="fas fa-frog"></i>
-				<a href="#">Portfolio</a>
-			</div>
-			<ul class="navbar__menu">
-				<li class="navbar__menu__item" data-link="#home">Home</li>
-				<li class="navbar__menu__item" data-link="#about">About</li>
-				<li class="navbar__menu__item" data-link="#job">Job Experience</li>
-				<li class="navbar__menu__item" data-link="#education">
-					Education
-				</li>
-				<li class="navbar__menu__item" data-link="#skills">Skills</li>
-				<li class="navbar__menu__item" data-link="#work">My work</li>
-				<li class="navbar__menu__item" data-link="#contact">Contact</li>
-			</ul>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Namsoo's Portfolio</title>
+        <meta name="description" content="Portfolio for a back-end software engineer Namsoo" />
+        <meta name="author" content="Namsoo" />
+        <link rel="icon" type="image/png" href="images/favicon.png" />
+        <script src="https://kit.fontawesome.com/8936e0966f.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Source+Code+Pro&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <script src="main.js" defer></script>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav id="navbar">
+            <div class="navbar_logo">
+                <i class="fas fa-frog"></i>
+                <a href="#">Portfolio</a>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__menu__item" data-link="#home">Home</li>
+                <li class="navbar__menu__item" data-link="#about">About</li>
+                <li class="navbar__menu__item" data-link="#job">Job Experience</li>
+                <li class="navbar__menu__item" data-link="#education">Education</li>
+                <li class="navbar__menu__item" data-link="#skills">Skills</li>
+                <li class="navbar__menu__item" data-link="#work">My work</li>
+                <li class="navbar__menu__item" data-link="#contact">Contact</li>
+            </ul>
 
-			<!-- Toggle button -->
-			<button class="navbar__toggle-btn">
-				<i class="fas fa-bars"></i>
-			</button>
-		</nav>
-		<!-- Home -->
-		<section id="home">
-			<div class="home__container">
-				<img
-					src="images/profile.png"
-					alt="Namsoo's profile photo"
-					class="home__avatar"
-				/>
-				<h1 class="home__title">Hello, I'm Namsoo Lee.</h1>
-				<h2 class="home__description">
-					I'm a Software Engineer in SF Bay Area, funseeker with an
-					inquisitive mind.
-				</h2>
-				<button class="home__contact" data-link="#contact">
-					Contact Me
-				</button>
-			</div>
-		</section>
-		<!-- About -->
-		<section id="about">
-			<h1>About me</h1>
-			<div class="about__description">
-				<p>
-					I’m a software engineer with solid web development experience committed to building well-designed systems with clean and efficient code.
-				</p>
-				<p>
-					I believe the first step to solving problems should be an
-					identification of real issues under the hood. I would love
-					to listen to the peoples and observe those issues people brought to me until I
-					get to the point.
-				</p>
-			</div>
-			<div class="about__majors">
-				<div class="major">
-					<div class="major__icon"><i class="fab fa-react"></i></div>
-					<h2 class="major__title">Front-end</h2>
-					<div class="major__description">
-						JavaScript, TypeScript, React, Python, GraphQL
-					</div>
-				</div>
-				<div class="major">
-					<div class="major__icon">
-						<i class="fab fa-node-js"></i>
-					</div>
-					<h2 class="major__title">Back-end</h2>
-					<div class="major__description">
-						NodeJS, Go, GraphQL
-					</div>
-				</div>
-				<div class="major">
-					<div class="major__icon">
-						<i class="fas fa-database"></i>
-					</div>
-					<h2 class="major__title">Etc</h2>
-					<div class="major__description">
-						Docker, AWS, MongoDB, PostgreSQL, Cassandra
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- Job Experience -->
-		<section id="job">
-			<div class="section__container">
-				<h1>Job Experience</h1>
-				<div class="job">
-					<img
-						src="images/jobs/wm_logo.png"
-						alt="company logo"
-						class="job__logo"
-					/>
-					<div class="job__description">
-						<p class="job__title">Walmart Global Tech</p>
-						<p class="job__name">
-							Software Engineer II
-						</p>
-						<p class="job__period">Aug 2022 - Present / Sunnyvale, CA</p>
-						<ul class="job__comment">
-							<li>
-								Ads Experience - rWeb
-							</li>
-							<li>
-								Develop and maintain various display ads on company's eComm web application
-							</li>
-							<li>
-								Tech stack: TypeScript, React, GraphQL, Node, and Cassandra
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="job">
-					<img
-						src="images/jobs/ul_logo.png"
-						alt="company logo"
-						class="job__logo"
-					/>
-					<div class="job__description">
-						<p class="job__title">UL LLC</p>
-						<p class="job__name">
-							Full-stack Software Engineer
-						</p>
-						<p class="job__period">Oct 2021 - Aug 2022 / Fremont, CA</p>
-						<ul class="job__comment">
-							<li>
-								Build internal desktop applications that automate the testing process for UL global labs
-							</li>
-							<li>
-								Developed an internal web application that provides in-depth information about opening new labs for executives
-							</li>
-							<li>
-								Maintain several internal web applications that manage testing engineers and devices under test
-							</li>
-							<li>
-								Tech stack: JavaScript, React, REST, Node, and MongoDB
-							</li>
-						</ul>
-					</div>
-				</div>
-
-			</div>
-		</section>
-		<!-- Education -->
-		<section id="education">
-			<div class="section__container">
-				<h1>Education</h1>
-				<div class="edu">
-					<!-- Place holder for Job Experience -->
-					<img
-						src="images/jobs/hr_logo.png"
-						alt=""
-						class="edu__logo"
-					/>
-					<div class="edu__description">
-						<p class="edu__title">Hack Reactor</p>
-						<p class="edu__name">
-							Advanced Software Engineering Immersive
-						</p>
-						<p class="edu__period">Oct 2020 - Jan 2021 / San Francisco, CA</p>
-						<ul class="edu__comment">
-							<li>
-								Completed over 900 hours of coding experience
-								(equivalent to roughly 1-1.5 years on the job)
-							</li>
-							<li>
-								Built full-stack engineering projects designed to
-								simulate a real-world, production-level environment,
-								used a variety of tools/frameworks namely React,
-								Node.js, Express, PostgreSQL, MongoDB
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- Skills -->
-		<section id="skills">
-			<div class="section__container">
-				<h1>Skills</h1>
-				<h2>Skills & Attributes</h2>
-				<div class="skills">
-					<div class="skills__left">
-						<h3 class="skills__title">Skills</h3>
-						<div class="skill">
-							<div class="skill__description">
-								<span>HTML</span>
-								<span>90%</span>
-							</div>
-							<div class="skill__bar">
-								<div
-									class="skill__progress"
-									style="width: 90%"
-								></div>
-							</div>
-						</div>
-						<div class="skill">
-							<div class="skill__description">
-								<span>CSS</span>
-								<span>70%</span>
-							</div>
-							<div class="skill__bar">
-								<div
-									class="skill__progress"
-									style="width: 70%"
-								></div>
-							</div>
-						</div>
-						<div class="skill">
-							<div class="skill__description">
-								<span>JavaScript</span>
-								<span>80%</span>
-							</div>
-							<div class="skill__bar">
-								<div
-									class="skill__progress"
-									style="width: 80%"
-								></div>
-							</div>
-						</div>
-						<div class="skill">
-							<div class="skill__description">
-								<span>TypeScript</span>
-								<span>40%</span>
-							</div>
-							<div class="skill__bar">
-								<div
-									class="skill__progress"
-									style="width: 40%"
-								></div>
-							</div>
-						</div>
-						<div class="skill">
-							<div class="skill__description">
-								<span>React</span>
-								<span>80%</span>
-							</div>
-							<div class="skill__bar">
-								<div
-									class="skill__progress"
-									style="width: 90%"
-								></div>
-							</div>
-						</div>
-						<div class="skill">
-							<div class="skill__description">
-								<span>NodeJS</span>
-								<span>90%</span>
-							</div>
-							<div class="skill__bar">
-								<div
-									class="skill__progress"
-									style="width: 80%"
-								></div>
-							</div>
-						</div>
-						<div class="skill">
-							<div class="skill__description">
-								<span>Go</span>
-								<span>50%</span>
-							</div>
-							<div class="skill__bar">
-								<div
-									class="skill__progress"
-									style="width: 50%"
-								></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- Work -->
-		<section id="work">
-			<div class="section__container">
-				<h1>My work</h1>
-				<h3>Personal Projects</h3>
-				<div class="work__categories">
-					<button class="category__btn active" data-filter="*">
-						<span class="category__text">All</span>
-						<span class="category__count">6</span>
-					</button>
-					<button class="category__btn" data-filter="front-end">
-						<span class="category__text">Front-end</span
-						><span class="category__count">3</span>
-					</button>
-					<button class="category__btn" data-filter="back-end">
-						<span class="category__text">Back-end</span
-						><span class="category__count">2</span>
-					</button>
-					<button class="category__btn" data-filter="blockchain">
-						<span class="category__text">Blockchain</span
-						><span class="category__count">1</span>
-					</button>
-				</div>
-				<div class="work__projects">
-					<a
-						href="https://spellingfrog.netlify.app"
-						class="project"
-						target="blank"
-						data-type="front-end"
-					>
-						<img
-							class="project__img"
-							src="images/projects/spellingbee.png"
-							alt=""
-						/>
-						<div class="project__description">
-							<h2>Spelling bee</h2>
-							<h2>----</h2>
-							<span
-								>Spelling bee contest practice web application
-								with Google Web Speech API</span
-							>
-						</div>
-					</a>
-					<a
-						href="https://namflix.netlify.app"
-						class="project"
-						target="blank"
-						data-type="front-end"
-					>
-						<img
-							class="project__img"
-							src="images/projects/namflix.png"
-							alt=""
-						/>
-						<div class="project__description">
-							<h2>Namflix</h2>
-							<h2>----</h2>
-							<span>Film and TV show guide web application</span>
-						</div>
-					</a>
-					<a
-						href="https://www.youtube.com/watch?v=mziOusdEerI"
-						class="project"
-						target="blank"
-						data-type="blockchain"
-					>
-						<img
-							class="project__img"
-							src="images/projects/blockchain.png"
-							alt=""
-						/>
-						<div class="project__description">
-							<h2>Blockchain</h2>
-							<h2>----</h2>
-							<span>Simple Blockchain CLI application</span>
-						</div>
-					</a>
-					<a
-						href="https://github.com/OptimizationPrime/Affordability-Calc"
-						class="project"
-						target="blank"
-						data-type="back-end"
-					>
-						<img
-							class="project__img"
-							src="images/projects/systemdesign.png"
-							alt=""
-						/>
-						<div class="project__description">
-							<h2>System Design</h2>
-							<h2>----</h2>
-							<span
-								>Improvement on the system design for legacy
-								front-end code</span
-							>
-						</div>
-					</a>
-					<a
-						href="https://www.youtube.com/watch?v=bwFG_wmzwp4"
-						class="project"
-						target="blank"
-						data-type="front-end"
-					>
-						<img
-							class="project__img"
-							src="images/projects/trulia.png"
-							alt=""
-						/>
-						<div class="project__description">
-							<h2>Property tour schedule</h2>
-							<h2>----</h2>
-							<span
-								>MERN real estate listing web application</span
-							>
-						</div>
-					</a>
-					<a
-						href="https://github.com/shortdaddy0711/goRestApi"
-						class="project"
-						target="blank"
-						data-type="back-end"
-					>
-						<img
-							class="project__img"
-							src="images/projects/gorestapi.png"
-							alt=""
-						/>
-						<div class="project__description">
-							<h2>Go REST API</h2>
-							<h2>----</h2>
-							<span>REST API for commenting server</span>
-						</div>
-					</a>
-				</div>
-			</div>
-		</section>
-		<!-- Testimonial -->
-		<!-- <section id="testimonials">
+            <!-- Toggle button -->
+            <button class="navbar__toggle-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+        <!-- Home -->
+        <section id="home">
+            <div class="home__container">
+                <img src="images/profile.png" alt="Namsoo's profile photo" class="home__avatar" />
+                <h1 class="home__title">Hello, I'm Namsoo Lee.</h1>
+                <h2 class="home__description">
+                    I'm a Software Engineer in SF Bay Area, funseeker with an inquisitive mind.
+                </h2>
+                <button class="home__contact" data-link="#contact">Contact Me</button>
+            </div>
+        </section>
+        <!-- About -->
+        <section id="about">
+            <h1>About me</h1>
+            <div class="about__description">
+                <p>
+                    I’m a software engineer with solid web development experience committed to building well-designed
+                    systems with clean and efficient code.
+                </p>
+                <p>It is alway make me happy to answer for various questions about web development.</p>
+                <br>
+                <p><strong>"To teach is to learn twice" - Joseph Joubert</strong></p>
+            </div>
+            <div class="about__majors">
+                <div class="major">
+                    <div class="major__icon"><i class="fab fa-react"></i></div>
+                    <h2 class="major__title">Front-end</h2>
+                    <div class="major__description">JavaScript, TypeScript, React, Python, GraphQL</div>
+                </div>
+                <div class="major">
+                    <div class="major__icon">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <h2 class="major__title">Back-end</h2>
+                    <div class="major__description">NodeJS, Go, GraphQL</div>
+                </div>
+                <div class="major">
+                    <div class="major__icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h2 class="major__title">Etc</h2>
+                    <div class="major__description">Docker, AWS, MongoDB, PostgreSQL, Cassandra</div>
+                </div>
+            </div>
+        </section>
+        <!-- Job Experience -->
+        <section id="job">
+            <div class="section__container">
+                <h1>Job Experience</h1>
+                <div class="job">
+                    <img src="images/jobs/wm_logo.png" alt="company logo" class="job__logo" />
+                    <div class="job__description">
+                        <p class="job__title">Walmart Global Tech</p>
+                        <p class="job__name">Software Engineer II</p>
+                        <p class="job__period">Aug 2022 - Present / Sunnyvale, CA</p>
+                        <ul class="job__comment">
+                            <li>Ads Experience - rWeb</li>
+                            <li>Develop and maintain various display ads on company's eComm web application</li>
+                            <li>Tech stack: TypeScript, React, GraphQL, Node, and Cassandra</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="job">
+                    <img src="images/jobs/ul_logo.png" alt="company logo" class="job__logo" />
+                    <div class="job__description">
+                        <p class="job__title">UL LLC</p>
+                        <p class="job__name">Full-stack Software Engineer</p>
+                        <p class="job__period">Oct 2021 - Aug 2022 / Fremont, CA</p>
+                        <ul class="job__comment">
+                            <li>
+                                Build internal desktop applications that automate the testing process for UL global
+                                labs
+                            </li>
+                            <li>
+                                Developed an internal web application that provides in-depth information about opening
+                                new labs for executives
+                            </li>
+                            <li>
+                                Maintain several internal web applications that manage testing engineers and devices
+                                under test
+                            </li>
+                            <li>Tech stack: JavaScript, React, REST, Node, and MongoDB</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Education -->
+        <section id="education">
+            <div class="section__container">
+                <h1>Education</h1>
+                <div class="edu">
+                    <!-- Place holder for Job Experience -->
+                    <img src="images/jobs/hr_logo.png" alt="" class="edu__logo" />
+                    <div class="edu__description">
+                        <p class="edu__title">Hack Reactor</p>
+                        <p class="edu__name">Advanced Software Engineering Immersive</p>
+                        <p class="edu__period">Oct 2020 - Jan 2021 / San Francisco, CA</p>
+                        <ul class="edu__comment">
+                            <li>
+                                Completed over 900 hours of coding experience (equivalent to roughly 1-1.5 years on the
+                                job)
+                            </li>
+                            <li>
+                                Built full-stack engineering projects designed to simulate a real-world,
+                                production-level environment, used a variety of tools/frameworks namely React, Node.js,
+                                Express, PostgreSQL, MongoDB
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Skills -->
+        <section id="skills">
+            <div class="section__container">
+                <h1>Skills</h1>
+                <h2>Skills & Attributes</h2>
+                <div class="skills">
+                    <div class="skills__left">
+                        <h3 class="skills__title">Skills</h3>
+                        <div class="skill">
+                            <div class="skill__description">
+                                <span>HTML</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill__bar">
+                                <div class="skill__progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill__description">
+                                <span>CSS</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="skill__bar">
+                                <div class="skill__progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill__description">
+                                <span>JavaScript</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill__bar">
+                                <div class="skill__progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill__description">
+                                <span>TypeScript</span>
+                                <span>40%</span>
+                            </div>
+                            <div class="skill__bar">
+                                <div class="skill__progress" style="width: 40%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill__description">
+                                <span>React</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill__bar">
+                                <div class="skill__progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill__description">
+                                <span>NodeJS</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill__bar">
+                                <div class="skill__progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill__description">
+                                <span>Go</span>
+                                <span>50%</span>
+                            </div>
+                            <div class="skill__bar">
+                                <div class="skill__progress" style="width: 50%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Work -->
+        <section id="work">
+            <div class="section__container">
+                <h1>My work</h1>
+                <h3>Personal Projects</h3>
+                <div class="work__categories">
+                    <button class="category__btn active" data-filter="*">
+                        <span class="category__text">All</span>
+                        <span class="category__count">6</span>
+                    </button>
+                    <button class="category__btn" data-filter="front-end">
+                        <span class="category__text">Front-end</span><span class="category__count">3</span>
+                    </button>
+                    <button class="category__btn" data-filter="back-end">
+                        <span class="category__text">Back-end</span><span class="category__count">2</span>
+                    </button>
+                    <button class="category__btn" data-filter="blockchain">
+                        <span class="category__text">Blockchain</span><span class="category__count">1</span>
+                    </button>
+                </div>
+                <div class="work__projects">
+                    <a href="https://spellingfrog.netlify.app" class="project" target="blank" data-type="front-end">
+                        <img class="project__img" src="images/projects/spellingbee.png" alt="" />
+                        <div class="project__description">
+                            <h2>Spelling bee</h2>
+                            <h2>----</h2>
+                            <span>Spelling bee contest practice web application with Google Web Speech API</span>
+                        </div>
+                    </a>
+                    <a href="https://namflix.netlify.app" class="project" target="blank" data-type="front-end">
+                        <img class="project__img" src="images/projects/namflix.png" alt="" />
+                        <div class="project__description">
+                            <h2>Namflix</h2>
+                            <h2>----</h2>
+                            <span>Film and TV show guide web application</span>
+                        </div>
+                    </a>
+                    <a
+                        href="https://www.youtube.com/watch?v=mziOusdEerI"
+                        class="project"
+                        target="blank"
+                        data-type="blockchain"
+                    >
+                        <img class="project__img" src="images/projects/blockchain.png" alt="" />
+                        <div class="project__description">
+                            <h2>Blockchain</h2>
+                            <h2>----</h2>
+                            <span>Simple Blockchain CLI application</span>
+                        </div>
+                    </a>
+                    <a
+                        href="https://github.com/OptimizationPrime/Affordability-Calc"
+                        class="project"
+                        target="blank"
+                        data-type="back-end"
+                    >
+                        <img class="project__img" src="images/projects/systemdesign.png" alt="" />
+                        <div class="project__description">
+                            <h2>System Design</h2>
+                            <h2>----</h2>
+                            <span>Improvement on the system design for legacy front-end code</span>
+                        </div>
+                    </a>
+                    <a
+                        href="https://www.youtube.com/watch?v=bwFG_wmzwp4"
+                        class="project"
+                        target="blank"
+                        data-type="front-end"
+                    >
+                        <img class="project__img" src="images/projects/trulia.png" alt="" />
+                        <div class="project__description">
+                            <h2>Property tour schedule</h2>
+                            <h2>----</h2>
+                            <span>MERN real estate listing web application</span>
+                        </div>
+                    </a>
+                    <a
+                        href="https://github.com/shortdaddy0711/goRestApi"
+                        class="project"
+                        target="blank"
+                        data-type="back-end"
+                    >
+                        <img class="project__img" src="images/projects/gorestapi.png" alt="" />
+                        <div class="project__description">
+                            <h2>Go REST API</h2>
+                            <h2>----</h2>
+                            <span>REST API for commenting server</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonial -->
+        <!-- <section id="testimonials">
 			<h1>Testimonials</h1>
 			<h3>See what they say about me</h3>
 			<div class="testimonials">
@@ -454,27 +340,19 @@
 				</div>
 			</div>
 		</section> -->
-		<!-- Contact -->
-		<section id="contact">
-			<h1 class="contact__title">Let's talk</h1>
-			<a href="mailto:namsoo.max.lee@gmail.com"
-				><h2 class="contatct__email">namsoo.max.lee@gmail.com</h2></a
-			>
-			<div class="contact__links">
-				<a href="https://github.com/shortdaddy0711" target="_blank"
-					><i class="fab fa-github"></i
-				></a>
-				<a
-					href="https://www.linkedin.com/in/namsoo-lee/"
-					target="_blank"
-					><i class="fab fa-linkedin"></i
-				></a>
-			</div>
-			<p class="contact__rights">Designed & Built by shortdaddy</p>
-		</section>
-		<!-- Arrow up -->
-		<button class="arrow__btn">
-			<i class="fas fa-arrow-circle-up" data-link="#home"></i>
-		</button>
-	</body>
+        <!-- Contact -->
+        <section id="contact">
+            <h1 class="contact__title">Let's talk</h1>
+            <a href="mailto:namsoo.max.lee@gmail.com"><h2 class="contatct__email">namsoo.max.lee@gmail.com</h2></a>
+            <div class="contact__links">
+                <a href="https://github.com/shortdaddy0711" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/namsoo-lee/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p class="contact__rights">Designed & Built by shortdaddy</p>
+        </section>
+        <!-- Arrow up -->
+        <button class="arrow__btn">
+            <i class="fas fa-arrow-circle-up" data-link="#home"></i>
+        </button>
+    </body>
 </html>
